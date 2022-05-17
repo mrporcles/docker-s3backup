@@ -33,9 +33,3 @@ running the backup at 03:00 every day, you could use something like this:
 ```
 docker run -d -v /home/user/Documents:/data/documents:ro -v $/home/user/Photos:/data/photos -e "ACCESS_KEY=YOURACCESSKEY" -e "SECRET_KEY=YOURSECRET" -e "S3PATH=s3://yours3bucket/" -e "CRON_SCHEDULE=0 3 * * *" mrporcles/s3backup
 ```
-
-23-03-2022
-24-01-2022
-25-11-2021
-27-09-2021
-
